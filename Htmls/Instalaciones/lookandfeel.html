@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BsdWiki Look and feel</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="../../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../../css/sb-admin.css" rel="stylesheet">
+    <link href="../../css/customwiki.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand mr-1" href="../../index.html">BsdWiki</a>
+
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+
+       <!-- Navbar Search -->
+       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Búsqueda..." aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        </li>
+      
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Notas</a>
+            <a class="dropdown-item" href="#">Actividades del grupo</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Pagina de Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Inicio</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="../middleware.html">Middleware</a>
+            <a class="dropdown-item" href="../noticiasFrontend.html">Noticias de front-end</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Conocimientos básicos</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Ambiente de desarrollo y herramientas</span></a>
+        </li>
+      </ul>
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+
+          <!-- 
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+              Area Chart Example</div>
+            <div class="card-body">
+              <canvas id="myAreaChart" width="100%" height="30"></canvas>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Bar Chart Example</div>
+                <div class="card-body">
+                  <canvas id="myBarChart" width="100%" height="50"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Pie Chart Example</div>
+                <div class="card-body">
+                  <canvas id="myPieChart" width="100%" height="100"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="small text-center text-muted my-5">
+            <em>More chart examples coming soon...</em>
+          </p>
+
+        </div>
+
+
+
+         /.container-fluid -->
+        <div class="card">
+          <div class="container my-auto card-header">
+            <h2>BsdWiki look and feel de ternium </h2>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 text-left card-body form-group">
+            <h5><strong>Pasos a seguir</strong></h5>
+            <p>Se comparten los lineamientos de diseño estándar para el desarrollo de operaciones.<span class="html-eti"></span></p>
+            <h5 id="esconder"><strong>Objetivo</strong></h5>  
+            <ul id="contenido">
+              <p>Usar PageOption para que la pantalla empiece maximizada.</p>
+              <div class="html-eti">
+                <li>Eliminar contenedores.</li>
+                <li>Tabstrip con bordes gris Ternium.</li>
+                <li>Usar LineControl como separador con las siguientes propiedades:
+                  <ul>
+                    <li>Color Line: Naranja Ternium</li>
+                    <li>Grosor 1pt</li>
+                    <li>Guiones: sólido</li>
+                    <li>Flechas; linea</li>
+                    <li>Resizable: true</li>
+                  </ul>
+                </li>
+                <li>Distribuir los controles dentro de la página de manera que no sea necesario hacer scroll para ver los datos iniciales.</li>
+                <li>Normalize en false por omisión.</li>
+                <li>Usar gridView o reemplazar Grid por GridView, con títulos en gris y Resizable horizontal, 
+                  y las columnas modal dialog por links llamando a Operation Dialog. (Esas subops deben mantener 
+                  la posibilidad de ser llamadas como Control Browser). Se debe permitir el ajuste del tamaño de 
+                  las columnas y dependiendo del requerimiento se personaliza la agrupación, el ordenamiento y los filtros.
+                </li>
+                <li>Reemplazar botones por ImageButton o SplitButton según el caso cuando sea conveniente. 
+                  En los casos de acciones que deba realizar el usuario se los dejarán como están hoy.
+                </li>
+                <li>Redistribuir controles para ocupar toda la pantalla.</li>
+                <li>Definir el font de los labels en Verdana orientación Left.</li>
+                <li>Ajustar el tamaño de los labels para evitar el multiLine.</li>
+                <li>Definir CssClass a los TextBox con el tipo “text”.</li>
+                <li>Estandarizar el tamaño de los botones que no se reemplazan a 24×88 y los imageButton a 24×24 o 16×16 
+                  dependiendo del tamaño de la pantalla.
+                </li>
+                <li>Definir tooltips para TODOS los controles que lo requieran. (ej: grillas, botones y labels)</li>
+                <li>Respetar reglas de ortografía en títulos y nombres de operación..</li>
+                <li>Mantener alineación entre controles.</li>
+                <li>Definir el orden de los campos para poder navegar con Tab.</li>
+                <li>Diferenciar los mensajes de pie de página en error, warning y éxito.</li>
+                <li>Suprimir los dos puntos al final de los títulos.</li>
+                <li>De ser posible definir vertical los RadioButton.</li>
+                <li>Usar íconos de acciones definidos en la galería de imágenes. (Estamos definiéndolos con las diseñadoras, 
+                  se publicará la galería en breve).</li>
+                <li>Indicar obligatoriedad con labels en negrita.</li>
+                <li>Agregar validación de ingreso por FE. (Rangos y obligatoriedad).</li>
+              </div>
+              <p> </p>
+              <p>Defaults TabStrip</p>
+              <div class="html-eti">
+                <li>Eliminar contenedores</li>
+              </div>
+              <p> </p>
+              <p>DEn cada Tab definir  las siguientes propiedades:</p>
+              <div class="html-eti">
+                <li>HeaderColor: NEGRO</li>
+                <li>Header Back Color: BLANCO</li>
+                <li>BackColor: BLANCO</li>
+                <li>Border Color: SOLID. luego seleccionar  GRIS TERNIUM dentro de la paleta.</li>
+              </div>
+            </ul> 
+          </div>
+        </div>
+
+     
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2018</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="../../vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../../js/sb-admin.js"></script>
+
+    <script src="../../js/Ajustes.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="../../js/demo/chart-area-demo.js"></script>
+    <script src="../../js/demo/chart-bar-demo.js"></script>
+    <script src="../../js/demo/chart-pie-demo.js"></script>
+
+  </body>
+
+</html>
